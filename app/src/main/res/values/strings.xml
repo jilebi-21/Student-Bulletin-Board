@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Student App</string>
+
+    <!-- Main Activity -->
+    <string name="main_nav_news">News</string>
+    <string name="main_nav_forum">Forums</string>
+
+    <!-- Login Screen & signup-->
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="signup_title">Enter your details</string>
+    <string name="login_email_info">Enter your college email</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_confirm_password_hint">Password</string>
+    <string name="login_forget_password">Forget password</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_signout">Signout</string>
+    <string name="settings_about">About</string>
+
+</resources>

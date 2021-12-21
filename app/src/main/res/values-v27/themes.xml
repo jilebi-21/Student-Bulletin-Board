@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="@style/Base.V27" />
+
+    <style name="Base.V27" parent="@style/Base">
+        <item name="android:navigationBarColor">@color/surface_color</item>
+        <item name="android:windowLightNavigationBar">@bool/is_light</item>
+    </style>
+</resources>

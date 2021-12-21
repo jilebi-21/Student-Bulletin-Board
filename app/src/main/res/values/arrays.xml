@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_theme">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Follow System</item>
+    </string-array>
+
+    <string-array name="app_theme_values">
+        <item>1</item>
+        <item>2</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>తెలుగు</item>
+        <item>हिन्दी</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>en</item>
+        <item>te</item>
+        <item>hi</item>
+    </string-array>
+
+</resources>

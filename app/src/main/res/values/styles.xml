@@ -1,0 +1,48 @@
+<resources>
+
+    <style name="ShapeAppearance.Small" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/medium_component_corner_size</item>
+    </style>
+
+    <style name="ShapeAppearance.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/medium_component_corner_size</item>
+    </style>
+
+    <style name="ShapeAppearance.Large" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/large_component_corner_size</item>
+    </style>
+
+    <!-- Text Input Layout Style-->
+    <style name="TextInputLayout.Rounded" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.Medium</item>
+        <item name="boxBackgroundColor">@color/surface_color_variant</item>
+        <item name="boxStrokeColor">@color/primary_color</item>
+        <item name="hintEnabled">false</item>
+        <item name="editTextStyle">@style/TextInputLayout.EditText</item>
+    </style>
+
+    <style name="TextInputLayout.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawableTint">?android:attr/textColorSecondary</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <style name="ShapeAppearance.Large.Bottom">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Large.Top">
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="BottomCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.Large</item>
+    </style>
+
+</resources>

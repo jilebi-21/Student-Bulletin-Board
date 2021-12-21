@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hm.student.ui.MainActivity">
+
+    <data>
+
+        <variable
+            name="toolbar_title"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="?actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{toolbar_title}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:onClick="openSettings"
+                android:padding="13.5dp"
+                android:src="@drawable/ic_settings" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/surface_color"
+            app:cardCornerRadius="38dp"
+            app:cardElevation="0dp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <fragment
+                    android:id="@+id/nav_host_fragment"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:defaultNavHost="true"
+                    app:navGraph="@navigation/main_navigation" />
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/surface_color"
+            android:paddingTop="10dp"
+            app:elevation="0dp"
+            app:menu="@menu/main_nav" />
+
+    </LinearLayout>
+
+</layout>

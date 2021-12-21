@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#669900</color>
+    <color name="surface_color">#F2F2F2</color>
+    <color name="surface_color_variant">#FAFAFA</color>
+    <color name="surface_color_variant_2">#FAFAFA</color>
+</resources>

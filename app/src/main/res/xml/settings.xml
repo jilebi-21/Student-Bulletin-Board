@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory>
+        <ListPreference
+            app:defaultValue="-1"
+            app:entries="@array/app_theme"
+            app:entryValues="@array/app_theme_values"
+            app:icon="@drawable/ic_settings_theme"
+            app:key="settings_app_theme"
+            app:layout="@layout/preference_material_top"
+            app:title="@string/settings_theme"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:icon="@drawable/ic_settings_about"
+            app:key="settings_about"
+            app:layout="@layout/preference_material_bottom"
+            app:title="@string/settings_about" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <Preference
+            android:title="@string/settings_signout"
+            app:key="settings_signout"
+            app:layout="@layout/preference_signout" />
+    </PreferenceCategory>
+</PreferenceScreen>

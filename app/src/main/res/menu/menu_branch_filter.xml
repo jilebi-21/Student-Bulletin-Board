@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/groups"
+        android:checkableBehavior="single">
+        <item android:title="ALL" />
+        <item android:title="CSE" />
+        <item android:title="Mech" />
+        <item android:title="ECE" />
+        <item android:title="EEE" />
+        <item android:title="IT" />
+        <item android:title="CIVIL" />
+        <item android:title="CHEM" />
+    </group>
+
+</menu>
